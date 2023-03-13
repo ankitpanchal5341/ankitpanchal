@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Hero from './Pages/Hero'
+import './App.css'
+import Projects from './Pages/Projects'
+import Footer from './Pages/Footer'
+import { darkTheme, lightTheme } from './themes'
+export default function App() {
+  const [lightMode, setLightMode] = useState(true)
 
-function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{
+      marginRight: -8, marginLeft: -9, marginTop: -10, overflow: 'hidden',
+      ...(lightMode ? lightTheme : darkTheme)
+    }}>
+      <Hero lightMode={lightMode} setLightMode={setLightMode} />
+      <Projects lightMode={lightMode} />
+      <Footer />
     </div>
-  );
+  )
 }
-
-export default App;
