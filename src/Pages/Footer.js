@@ -22,10 +22,22 @@ export default function Footer() {
 
         >
             <Grid item lg={4} xs={11} md={4} sm={4} container justifyContent={'center'} alignItems="center">
-                <Button> <LinkedIn /></Button>
-                <Button> <InstagramIcon /></Button>
-                <Button> <FacebookIcon /></Button>
-                <Button> <WhatsAppIcon /></Button>
+                <Button
+                    href='https://www.linkedin.com/in/ankit-panchal-76569a172/'
+                    target='_blank'
+                > <LinkedIn /></Button>
+                <Button
+                    href='https://www.instagram.com/__ankit.panchal'
+                    target='_blank'
+                > <InstagramIcon /></Button>
+                <Button
+                    href='https://www.facebook.com/in/ankitpanchaldudhla'
+                    target='_blank'
+                > <FacebookIcon />
+                </Button>
+                <Button
+                    href='whatsapp:+919568376762'
+                > <WhatsAppIcon /></Button>
                 <Grid container justifyContent={'center'} pt={2}>
                     <Typography variant='overline'>All rights reserved <a href='#'>Ankit Panchal</a>&nbsp;@2023</Typography>
 

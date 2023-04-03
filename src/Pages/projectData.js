@@ -1,22 +1,22 @@
-import { project_image_1 } from "../assests";
+import { project_image_1, project_image_2, project_image_3 } from "../assests";
 
 export const projectData = [
     {
-        name: 'Project 1',
-        description: 'I created this personal project in order to show how to create an interface in Figma using a portfolio as an example. ',
-        link: 'https://www.google.com',
-        image: project_image_1
+        name: 'Darshi Events Organizing & Managing LLC .',
+        description: 'This project was created when i was learning html/css.This website is created using html & css for an UAE based startup. ',
+        link: 'https://deomllc.com/',
+        image: project_image_2
     },
     {
-        name: 'Project 2',
-        description: 'I created this personal project in order to show how to create an interface in Figma using a portfolio as an example. ',
-        link: 'https://www.google.com',
-        image: project_image_1
+        name: 'Kwik Coders Technologies Co. LLC',
+        description: "I am creating this website in NextJS & MUI (material-UI) for another UAE based tech startup named Kwik Coders Technologies LLC.",
+        link: 'https://www.kwikcoderstechnologies.com/',
+        image: project_image_3
     },
     {
-        name: 'Project 3',
-        description: 'I created this personal project in order to show how to create an interface in Figma using a portfolio as an example. ',
-        link: 'https://www.google.com',
+        name: 'Restaurent website landing page theme',
+        description: 'Restaurant website templates to make your cafeteria, restaurant, pizzeria, and any other food-related website look cool on the internet. ',
+        link: 'https://origo-assignment.vercel.app/',
         image: project_image_1
     }
 ]

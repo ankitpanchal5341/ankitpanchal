@@ -1,20 +1,23 @@
 import React, { useState } from 'react'
-import Hero from './Pages/Hero'
-import './App.css'
-import Projects from './Pages/Projects'
+import Home from './Home'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import AboutMe from './Pages/AboutMe'
+import Header from './Pages/Header'
 import Footer from './Pages/Footer'
-import { darkTheme, lightTheme } from './themes'
-export default function App() {
-  const [lightMode, setLightMode] = useState(true)
 
-  return (
-    <div style={{
-      marginRight: -8, marginLeft: -9, marginTop: -10, overflow: 'hidden',
-      ...(lightMode ? lightTheme : darkTheme)
-    }}>
-      <Hero lightMode={lightMode} setLightMode={setLightMode} />
-      <Projects lightMode={lightMode} />
-      <Footer />
-    </div>
-  )
+export default function App() {
+    const [hlightMode, sethLightMode] = useState(true)
+
+    return (
+        <BrowserRouter>
+            <Header lightMode={hlightMode} sethLightMode={sethLightMode} />
+            <Routes>
+                <Route path='/' Component={Home} hlightMode={hlightMode} sethLightMode={sethLightMode} />
+                <Route path='/about' Component={AboutMe} />
+
+            </Routes>
+            <Footer />
+        </BrowserRouter>
+
+    )
 }

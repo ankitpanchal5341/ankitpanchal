@@ -1,2 +1,5 @@
 export { default as hero_image } from '../assests/Group 2.svg'
-export { default as project_image_1 } from '../assests/Group 4.png'
+export { default as project_image_1 } from '../assests/project_1.png'
+export { default as project_image_2 } from '../assests/project_2.jpg'
+export { default as project_image_3 } from '../assests/project_3.jpg'
+export { default as my_image } from '../assests/ankit_panchal.jpg'
